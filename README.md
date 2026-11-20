@@ -1,3 +1,3 @@
 # Aftermath Massage & Bodywork
 
-A static website concept for Betty’s massage and Shiatsu practice, intended for AftermathMassage.com. Open `index.html` locally or serve the repository root with any static host.
+Website for AftermathMassage.com. GitHub Pages serves the static files from the root of the main branch. Update index.html, style.css and the images here to update the site.

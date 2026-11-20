@@ -91,3 +91,32 @@ footer { background: #eceee3; border-top: 1px solid var(--rule); }
  .foot { gap: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.barefoot, .practitioner { align-items: center; }
+.barefoot-copy > p:not(.kicker), .bio > p:not(.kicker) { max-width: 32rem; margin: 1.2rem 0 0; color: var(--muted); }
+.training { width: 100%; max-width: 25rem; justify-self: center; margin: 0; }
+.training-detail { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #ddd9c5; }
+.training-detail img { position: absolute; width: 320%; max-width: none; height: auto; left: -25%; top: -105%; }
+.training figcaption { margin-top: .7rem; color: var(--muted); font-size: .875rem; line-height: 1.45; }
+.training figcaption a { text-decoration: underline; text-underline-offset: .17em; }
+.practitioner { background: #e9ece1; }
+.portrait { max-width: 20rem; width: 100%; justify-self: center; }
+.portrait img { width: 100%; height: auto; border-radius: 48% 48% 3px 3px; }
+@media (max-width: 760px) {
+  .barefoot, .practitioner { grid-template-columns: 1fr; }
+  .training { justify-self: start; }
+  .portrait { max-width: 15rem; justify-self: start; }
+}
+
+.bio .text-link { margin-top: 1.1rem; }
+.guide { background: var(--pine); color: var(--paper); align-items: start; }
+.guide .kicker, .guide h2 em { color: var(--paper); }
+.guide .kicker span { background: #d8c6a5; }
+.guide h2 + p { max-width: 24rem; margin-top: 1.3rem; }
+.guide summary::after { border-color: currentColor; }
+.guide dl { margin: 0; padding: 0 1rem 1.4rem 0; }
+.guide dt { font-weight: 650; }
+.guide dd { margin: .1rem 0 .8rem; color: #edf0e7; }
+.guide dd:last-child { margin-bottom: 0; }
+.guide dd a { text-decoration: underline; text-underline-offset: .16rem; }
+@media (max-width: 760px) { .guide { grid-template-columns: 1fr; } }
